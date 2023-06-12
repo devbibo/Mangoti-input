@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Link to the external CSS file -->
+  <link rel="icon" href="Images/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mangoti</title>
+  <meta name="description" content="Osu + Popcat = Mangoti">
+</head>
+<body>
+  <!-- Add a container for the profile section -->
+  <div id="profile">
+    <input type="file" id="profile-pic-input" accept="image/*">
+    <img id="profile-pic" src="Images/ppf1.jpeg" alt="profile picture">
+    <input type="text" id="name" placeholder="Enter your name">
+  </div>
+
+  <button id="reset">Reset</button>
+  <button id="save">Save</button>
+
+  <div id="score">0</div>
+  
+  <!-- Add the "Add custom Mango/Photo" label and input field -->
+  <label for="mango-shape">Select mango shape</label>
+  <select id="mango-shape">
+    <option value="Images/mango.png">Default - Apple Mango</option>
+    <option value="Images/mango2.png">Google Mango</option>
+    <option value="Images/mango3.png">Windows 11 22H2 Mango</option>
+    <option value="custom">Custom Mango</option>
+  </select>
+
+  <!-- Add a new element for the message -->
+  <div id="message"></div>
+  <img id="mango" src="Images/mango.png" alt="Mango">
+
+  <!-- Link to the external JavaScript file -->
+  <script src="script.js"></script>
+
+  <script>
+    // Retrieve the name and profile picture from local storage and display them on the page
+    const nameInput = document.getElementById("name");
+    const profilePic = document.getElementById("profile-pic");
+    const name = localStorage.getItem("name");
+    const pic = localStorage.getItem("profile-pic");
+    if (name) {
+      nameInput.value = name;
+    }
+    if (pic) {
+      profilePic.src = pic;
+    }
+  </script>
+</body>
+</html>

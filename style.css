@@ -1,0 +1,159 @@
+* {
+  font-family: montserrat;
+}
+
+body {
+  background-image: linear-gradient(to left, #2ec70f, #af5616);
+}
+
+#mango {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#mango:hover {
+  transform: scale(1.2);
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+}
+
+#reset,
+#save {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 12px;
+}
+
+#reset:hover {
+  background-color: rgb(236, 0, 0);
+  color: white;
+}
+
+#save:hover {
+  background-color: #ffd000;
+  color: white;
+}
+
+/* Add styles for the profile section */
+#profile {
+  position: relative;
+  top: 3px;
+  right: 21px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-left: 20px;
+}
+
+#profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+}
+
+#name {
+  width: 300px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  top: 3px;
+  right: 21px;
+
+  
+}
+
+
+/* Add styles for the message element */
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border: none;
+}
+
+label {
+  color: rgb(255, 255, 255);
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+select {
+  padding: 11px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  margin-left: 12px;
+
+}
+
+option {
+  font-weight: 600;
+}
+
+/* Add styles for the custom mango button */
+#custom {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: white;
+  color: rgb(10, 165, 51);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#custom:hover {
+  background-color: rgb(72, 14, 207);
+  color: white;
+}
+
+#profile input[type="file"] {
+  display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  /* Add styles for the label and select elements in responsive mode */
+  label,
+  select {
+    font-size: 14px;
+    margin-left: 3px;
+  }
+
+  select {
+    margin-top: 1px;
+  }
+
+  #custom {
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-bottom: 12px !important;
+  }
+}

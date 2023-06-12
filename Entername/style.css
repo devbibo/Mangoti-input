@@ -1,0 +1,39 @@
+* {
+    font-family: montserrat;
+
+  }
+
+  body {
+    background-image: linear-gradient(to left, #2ec70f, #af5616);
+    text-align: center;
+    margin-top: 200px;
+    font-size: 2em;
+    color: white;
+  }
+  
+
+  input{
+    font-size: 0.7em;
+    border-radius: 10px;
+    border: none;
+  }
+
+  label{
+    font-size: 1.2em;
+  }
+
+  button{
+    font-size: 0.6em;
+    padding: 0.4em;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+  }
+
+  button:hover{
+    color: white;
+    background-color: black;
+  }
